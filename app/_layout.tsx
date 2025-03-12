@@ -30,8 +30,10 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
+      <Stack.Screen name="index" options={{ title: "Trang Chủ" }} />
+        <Stack.Screen name="HeaderScreen" options={{ title: "Bài 1: Header" }} />
+        <Stack.Screen name="SectionScreen" options={{ title: "Bài 2: Section" }} />
+        {/* <Stack.Screen name="InputScreen" options={{ title: "Bài 3: Input" }} /> */}
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
